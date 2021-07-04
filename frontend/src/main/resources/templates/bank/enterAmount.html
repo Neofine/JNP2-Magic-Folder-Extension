@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Enter amount of PLN you want to exchange!</title>
+    <link th:href="@{/styles/mainStyles.css}" rel="stylesheet" />
+</head>
+<body class = "whole-page">
+
+  <div class="whole-page center">
+      <form name = "amount-form" th:action = "@{/exchangeSent}" method = "post" class = "center">
+          <fieldset>
+              <b>Write some mails! </b><br>
+              <label for="currency"> Currency code: </label>
+              <input type="text" id="currency" name="currency"/><br>
+
+              <label for="amount"> Amount </label>
+              <input type="text" id="amount" name="amount"/><br>
+
+              <button type="submit" class="btn"> Send. </button><br>
+          </fieldset>
+      </form>
+  </div>
+
+</body>
+</html>

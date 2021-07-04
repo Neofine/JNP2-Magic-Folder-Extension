@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Send Mail</title>
+    <link th:href="@{/styles/mainStyles.css}" rel="stylesheet" />
+</head>
+<body class = "whole-page">
+
+    <div class="whole-page center">
+        <form name = "amount-form" th:action = "@{/mailSent/}" method = "post" class = "center">
+            <fieldset>
+                <b>Write some mails! </b><br>
+                <label for="recipient"> To whom </label>
+                <input type="text" id="recipient" name="recipient"/><br>
+
+                <label for="subject"> Subject </label>
+                <input type="text" id="subject" name="subject"/><br>
+
+                <label for="body">Mail body:</label><br>
+                <textarea id="body" name="body" rows="4" cols="50"></textarea><br>
+
+                <button type="submit" class="btn"> Send. </button><br>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>

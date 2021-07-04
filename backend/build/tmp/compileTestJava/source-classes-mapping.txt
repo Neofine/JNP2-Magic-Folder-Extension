@@ -1,0 +1,2 @@
+pl/mimuw/jnp2/projectjnp2/ProjectJnp2ApplicationTests.java
+ pl.mimuw.jnp2.projectjnp2.ProjectJnp2ApplicationTests

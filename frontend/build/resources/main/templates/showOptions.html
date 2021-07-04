@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title> Mail Sent! </title>
+  <link th:href="@{/styles/mainStyles.css}" rel="stylesheet" />
+</head>
+<body class = "whole-page">
+
+<div class="whole-page center">
+  <b> Welcome! </b><br>
+  <b> What do you want to do? </b><br>
+
+  <form th:action="@{/mail}">
+    <input type="submit" value="Send some mails!">
+  </form>
+
+  <form th:action="@{/backup}">
+    <input type="submit" value="Make some backups!">
+  </form>
+
+  <form th:action="@{/bank}">
+    <input type="submit" value="Get newest currency rates!">
+  </form>
+
+</div>
+
+</body>
+</html>
